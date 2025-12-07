@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-worka-black;
+}
+
+/* Basic smooth transitions */
+* {
+  @apply transition-colors duration-150;
+}
+
+/* Safe-area padding for bottom nav */
+.main-content {
+  padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+}
